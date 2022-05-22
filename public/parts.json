@@ -1,0 +1,56 @@
+[
+    {
+        "_id": 1,
+        "name": "Engine",
+        "img": "",
+        "description": "",
+        "minimum-order": 2,
+        "available": 1000,
+        "price": 400
+    },
+    {
+        "_id": 2,
+        "name": "Wheel",
+        "img": "",
+        "description": "",
+        "minimum-order": 2,
+        "available": 1000,
+        "price": 400
+    },
+    {
+        "_id": 3,
+        "name": "Transmission",
+        "img": "",
+        "description": "",
+        "minimum-order": 2,
+        "available": 1000,
+        "price": 400
+    },
+    {
+        "_id": 4,
+        "name": "Battery",
+        "img": "",
+        "description": "",
+        "minimum-order": 2,
+        "available": 1000,
+        "price": 400
+    },
+    {
+        "_id": 5,
+        "name": "Radiator",
+        "img": "",
+        "description": "",
+        "minimum-order": 2,
+        "available": 1000,
+        "price": 400
+    },
+    {
+        "_id": 6,
+        "name": "Front Steering and Suspension",
+        "img": "",
+        "description": "",
+        "minimum-order": 2,
+        "available": 1000,
+        "price": 400
+    }
+]

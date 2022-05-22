@@ -1,11 +1,14 @@
 import React from 'react';
+import offer from '../../assets/offer.jpg';
+import apply from '../../assets/apply.jpg';
+
 
 const Carriers = () => {
     return (
         <div className="card w-full bg-base-100 shadow-xl grid grid-cols-2">
             <div>
                 <figure className="px-10 pt-10">
-                    <img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" className="rounded-xl" />
+                    <img src={offer} alt="Shoes" className="rounded-xl" />
                 </figure>
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">What We Offer!</h2>
@@ -17,7 +20,7 @@ const Carriers = () => {
             </div>
             <div>
                 <figure className="px-10 pt-10">
-                    <img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" className="rounded-xl" />
+                    <img src={apply} alt="Shoes" className="rounded-xl" />
                 </figure>
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">How to Apply?</h2>
