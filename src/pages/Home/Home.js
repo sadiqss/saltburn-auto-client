@@ -9,7 +9,6 @@ import Welcome from './Welcome';
 const Home = () => {
     return (
         <div>
-            <h1 className='text-center text-2xl'>Saltburn Auto Solution</h1>
             <Banner></Banner>
             <Welcome></Welcome>
             <Parts></Parts>

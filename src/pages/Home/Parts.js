@@ -6,6 +6,7 @@ import transmission from '../../assets/parts/transmission.jpg';
 import battery from '../../assets/parts/battery.jpg';
 import radiator from '../../assets/parts/radiator.jpg';
 import steering from '../../assets/parts/steering.jpg';
+import { Link } from 'react-router-dom';
 
 const Parts = () => {
     const parts = [
@@ -68,16 +69,19 @@ const Parts = () => {
     return (
         <div className='my-28'>
             <div className='text-center'>
-                <h3 className='text-primary  text-xl font-bold uppercase'>Our parts</h3>
-                <h2 className='text-4xl'>parts We Provide</h2>
+                <h3 className='text-primary  text-xl font-bold uppercase'>Our Products</h3>
             </div>
             <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                 {
-                    parts.map(part => <Part
+                    parts.slice(0, 3).map(part => <Part
                         key={part._id}
                         part={part}
                     ></Part>)
                 }
+
+            </div>
+            <div className='text-right pt-5'>
+                <a className="link link-hover p-10 text-primary">See More</a>
             </div>
         </div>
     );
