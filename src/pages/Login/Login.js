@@ -16,6 +16,7 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
+
     let signInError;
     const navigate = useNavigate();
     const location = useLocation();
