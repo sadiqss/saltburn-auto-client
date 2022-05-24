@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
@@ -22,10 +22,11 @@ const Login = () => {
 
     let from = location.state?.from?.pathname || "/purchase";
 
-    if (user || gUser) {
-        navigate(from, { replace: true });
-        console.log(gUser)
-    }
+    useEffect(() => {
+        if (user || gUser) {
+            navigate(from, { replace: true });
+        }
+    }, [user, gUser, from, navigate])
 
     if (loading || gLoading) {
         <Loading></Loading>

@@ -1,5 +1,4 @@
 import React from 'react';
-import Part from './Part';
 import engine from '../../assets/parts/engine.jpg';
 import wheel from '../../assets/parts/wheel.jpg';
 import transmission from '../../assets/parts/transmission.jpg';
@@ -7,8 +6,9 @@ import battery from '../../assets/parts/battery.jpg';
 import radiator from '../../assets/parts/radiator.jpg';
 import steering from '../../assets/parts/steering.jpg';
 import { Link } from 'react-router-dom';
+import Product from './Product';
 
-const Parts = () => {
+const Products = () => {
     const parts = [
         {
             "_id": 1,
@@ -73,18 +73,15 @@ const Parts = () => {
             </div>
             <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                 {
-                    parts.slice(0, 3).map(part => <Part
+                    parts.map(part => <Product
                         key={part._id}
                         part={part}
-                    ></Part>)
+                    ></Product>)
                 }
 
-            </div>
-            <div className='text-right pt-5'>
-                <p><Link className='link link-hover p-10 text-primary' to="/products"> See More </Link></p>
             </div>
         </div>
     );
 };
 
-export default Parts;
+export default Products;
