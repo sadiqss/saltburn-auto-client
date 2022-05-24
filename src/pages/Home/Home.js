@@ -5,6 +5,8 @@ import Carriers from './Carriers';
 import Parts from './Parts';
 import Reviews from './Reviews';
 import Welcome from './Welcome';
+import Footer from '../Shared/Footer';
+
 
 const Home = () => {
     return (
@@ -15,6 +17,7 @@ const Home = () => {
             <Carriers></Carriers>
             <BusinessSummary></BusinessSummary>
             <Reviews></Reviews>
+            <Footer></Footer>
         </div>
     );
 };
