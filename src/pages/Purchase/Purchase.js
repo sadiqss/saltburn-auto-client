@@ -1,9 +1,10 @@
 import React from 'react';
+import AvailableProduct from './AvailableProduct';
 
 const Purchase = () => {
     return (
         <div>
-            <h1>Purchase</h1>
+            <AvailableProduct></AvailableProduct>
         </div>
     );
 };

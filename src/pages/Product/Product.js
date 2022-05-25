@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Product = ({ part }) => {
+const Product = ({ part, handlePurchase }) => {
+
     return (
         <div className="card lg:max-w-lg bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
@@ -14,7 +15,7 @@ const Product = ({ part }) => {
                 <h2 className="card-title">Min Order:{part.minimumOrder}</h2>
                 <h2 className="card-title">Price:{part.price}</h2>
             </div>
-            <p className='btn'><Link to="/purchase"><button className='btn'> Purchase </button></Link></p>
+            <p className='btn'><Link to="/purchase"><button onClick={() => handlePurchase(part)} className='btn'> Purchase </button></Link></p>
         </div>
     );
 };
