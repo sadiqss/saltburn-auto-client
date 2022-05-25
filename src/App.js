@@ -12,6 +12,8 @@ import MyPurchase from './pages/Dashboard/MyPurchase';
 import MyReview from './pages/Dashboard/MyReview';
 import MyReward from './pages/Dashboard/MyReward';
 import Users from './pages/Dashboard/Users';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -36,6 +38,7 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
       </Routes>
+      <ToastContainer></ToastContainer>
 
     </div>
   );
