@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Part = ({ product }) => {
+const Part = ({ product, setPart }) => {
     const { name, available, minOrder } = product;
     return (
         <div className="card lg:max-w-lg bg-base-100 shadow-xl">
@@ -15,8 +15,11 @@ const Part = ({ product }) => {
                         :
                         <span className='text-red-500'>Stock Run Out</span>
                 }</p>
-                <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+                <div className="card-actions justify-center">
+                    <label
+                        htmlFor="purchaseModal"
+                        disabled={minOrder > available}
+                        onClick={() => setPart(product)} className="btn btn-primary text-white uppercase">Buy Now</label>
                 </div>
             </div>
         </div>

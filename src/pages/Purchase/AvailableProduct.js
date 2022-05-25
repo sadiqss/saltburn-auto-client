@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Part from './Part';
+import PurchaseModal from './PurchaseModal';
 
 const AvailableProduct = () => {
     const [products, setProducts] = useState([]);
+    const [part, setPart] = useState(null);
 
     useEffect(() => {
-        fetch('parts.json')
+        fetch('http://localhost:5000/parts')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])
@@ -15,9 +17,13 @@ const AvailableProduct = () => {
                 {products.map(product => <Part
                     key={product._id}
                     product={product}
+                    setPart={setPart}
                 ></Part>)}
             </div>
-
+            {part && <PurchaseModal
+                part={part}
+                setPart={setPart}
+            ></PurchaseModal>}
         </div>
     );
 };
