@@ -21,7 +21,7 @@ const PurchaseModal = ({ part, setPart, refetch }) => {
             city: event.target.city.value,
             postCode: event.target.post.value
         }
-        fetch('http://localhost:5000/order', {
+        fetch('https://mysterious-mesa-87312.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

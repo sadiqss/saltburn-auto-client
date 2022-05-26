@@ -15,6 +15,7 @@ import Users from './pages/Dashboard/Users';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import RequireAdmin from './pages/Login/RequireAdmin';
+import Blog from './pages/Shared/Blog/Blog';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path='reward' element={<MyReward />}></Route>
           <Route path='users' element={<Users></Users>}></Route>
         </Route>
+        <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
       </Routes>

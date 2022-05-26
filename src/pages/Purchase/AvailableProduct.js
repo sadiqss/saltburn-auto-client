@@ -7,14 +7,14 @@ import PurchaseModal from './PurchaseModal';
 const AvailableProduct = () => {
     // const [products, setProducts] = useState([]);
     const [part, setPart] = useState(null);
-    const { data: products, isLoading, refetch } = useQuery('available', () => fetch('http://localhost:5000/available')
+    const { data: products, isLoading, refetch } = useQuery('available', () => fetch('https://mysterious-mesa-87312.herokuapp.com/available')
         .then(res => res.json())
     )
     if (isLoading) {
         return <Loading></Loading>
     }
     // useEffect(() => {
-    //     fetch('http://localhost:5000/available')
+    //     fetch('https://mysterious-mesa-87312.herokuapp.com/available')
     //         .then(res => res.json())
     //         .then(data => setProducts(data));
     // }, [products])

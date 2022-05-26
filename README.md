@@ -1,6 +1,20 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Saltburn Auto solution client side
+	### Saltburn Auto Solution Client side code is used design website for saltburn auto solution company
+	### Useful Links are below
+   1. [Client-side code:](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-sadiqss)
+  2.  [Server-side code:](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-sadiqss)
+  3.  [Live website link:](https://saltburn-auto-solution.web.app/)
+
+  ## Technology used
+  * React Js
+  * Mongo db for database
+  * tailwind
+  * daisyui
+  * firebase
+  * react-toastify
+  * react-query
+  * react-hook-form
 
 ## Available Scripts
 

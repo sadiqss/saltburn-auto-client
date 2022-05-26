@@ -2,9 +2,10 @@ import React from 'react';
 
 
 const Part = ({ product, setPart }) => {
-    const { name, available, minOrder } = product;
+    const { name, available, minOrder, img } = product;
     return (
         <div className="card lg:max-w-lg bg-base-100 shadow-xl">
+            <figure><img src={img} alt="Parts" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>
                 <p>Min Order:{minOrder}</p>

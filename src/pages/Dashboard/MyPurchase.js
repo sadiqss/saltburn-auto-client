@@ -10,7 +10,7 @@ const MyPurchase = () => {
     const navigate = useNavigate();
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/order?buyer=${user.email}`, {
+            fetch(`https://mysterious-mesa-87312.herokuapp.com/order?buyer=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
