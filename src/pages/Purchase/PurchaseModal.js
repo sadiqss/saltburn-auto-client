@@ -10,7 +10,6 @@ const PurchaseModal = ({ part, setPart }) => {
     const handleOrder = event => {
         event.preventDefault();
         const quantity = event.target.quantity.value;
-        console.log(_id, name, quantity);
         const order = {
             partId: _id,
             part: name,
