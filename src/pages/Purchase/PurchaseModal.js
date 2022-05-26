@@ -3,7 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
-const PurchaseModal = ({ part, setPart }) => {
+const PurchaseModal = ({ part, setPart, refetch }) => {
     const { _id, name, minOrder, available } = part;
     const [user, loading, error] = useAuthState(auth);
 
@@ -34,6 +34,7 @@ const PurchaseModal = ({ part, setPart }) => {
                 if (data.success) {
                     toast('Your Order is Placed');
                 }
+                refetch();
                 setPart(null);
             })
 
