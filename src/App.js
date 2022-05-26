@@ -14,6 +14,7 @@ import MyReward from './pages/Dashboard/MyReward';
 import Users from './pages/Dashboard/Users';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import RequireAdmin from './pages/Login/RequireAdmin';
 
 function App() {
   return (

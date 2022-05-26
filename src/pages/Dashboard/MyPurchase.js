@@ -48,7 +48,9 @@ const MyPurchase = () => {
                     </thead>
                     <tbody>
                         {
-                            orders.map((a, index) => <tr>
+                            orders.map((a, index) => <tr
+                                key={index}
+                            >
                                 <th>{index + 1}</th>
                                 <td>{a.buyerName}</td>
                                 <td>{a.part}</td>
