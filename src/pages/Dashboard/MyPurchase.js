@@ -17,7 +17,7 @@ const MyPurchase = () => {
                 }
             })
                 .then(res => {
-                    console.log(res);
+                    console.log('res', res);
                     if (res.status === 401 || res.status === 403) {
                         signOut(auth);
                         localStorage.removeItem('accessToken');
@@ -33,7 +33,7 @@ const MyPurchase = () => {
     }, [user])
     return (
         <div>
-            <h2>My appointment:{orders.length}</h2>
+            <h2>My Orders:{orders.length}</h2>
             <div className="overflow-x-auto">
                 <table className="table w-full">
                     {/* <!-- head --> */}

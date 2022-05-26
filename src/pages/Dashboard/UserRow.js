@@ -19,9 +19,8 @@ const UserRow = ({ user, refetch }) => {
             .then(data => {
                 if (data.modifiedCount > 0) {
                     refetch();
-                    toast.success(`Successfully made an admin`);
+                    toast.success(`Succesfully made an admin`);
                 }
-
             })
     }
     return (
@@ -29,7 +28,6 @@ const UserRow = ({ user, refetch }) => {
             <th>1</th>
             <td>{email}</td>
             <td>{role !== 'admin' && <button onClick={makeAdmin} className="btn btn-xs">Make Admin</button>}</td>
-            <td><button className="btn btn-xs">Remove User</button></td>
         </tr>
     );
 };
